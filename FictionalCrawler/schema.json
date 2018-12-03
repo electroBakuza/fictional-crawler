@@ -1,0 +1,25 @@
+{
+	"alibaba": {
+		"format": {
+			"title": ".ma-title::text",
+			"price": ".ma-ref-price span::text"
+		},		
+		"save_check_on" : [ "title", "price"],
+		"allowed_domains": [
+			"alibaba.com"
+		],
+		"depth_limit": 4.0,
+		"handle_http_list": [
+			403.0,
+			404.0,
+			301.0,
+			302.0,
+			303.0,
+			307.0,
+			308.0
+		],
+		"start_urls": [
+			"https://www.alibaba.com/"
+		]
+	}
+}
